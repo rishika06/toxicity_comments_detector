@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ttd__header-wrapper {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 190px;
+}
+
+.ttd__title {
+  /* text-align: center; */
+  /* margin: 40px 0; */
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.ttd__input-title-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 250px;
+  background-color: #f1f1f1;
+}
+
+.ttd__input-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 80px 0;
+}
+.ttd__input-wrapper button {
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.ttd__textfield {
+  width: 70%;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.ttd__comment {
+  margin-top: 300px;
+}
+
+.ttd__single-comment {
+  border: 2px solid #fff;
+  border-radius: 6px;
+  background-color: #ffffff;
+  margin-bottom: 24px;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.04);
+}
+
+.ttd__single-comment p {
+  margin: 0;
+  opacity: 0.6;
+  padding: 24px;
+}
+
+.ttd__badges {
+  display: flex;
+  padding: 16px 24px;
+  gap: 8px;
+  background: #f6f6f693;
+}
+
+.ttd__drawer-wrapper {
+  padding: 20px 36px;
+}
+
+.ttd__drawer-wrapper > h4 {
+  font-size: 24px;
+}
+
+.ttd__drawer-wrapper > p {
+  font-size: 17px;
+}
+
+.loader {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  height: 100vh;
 }
